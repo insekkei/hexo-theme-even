@@ -34,5 +34,17 @@
 
     {% include '_script/libs.swig' %}
     {% include '_script/theme.swig' %}
+    <script>
+      new Valine({
+        el: '#comment' ,
+        notify:false,
+        verify:false,
+        app_id: 'SrabF1tXJrV4acE8KepjoHP4-gzGzoHsz',
+        app_key: 'Q2xiILiLtYtKpRTaz9M9RlDo',
+        placeholder: 'hi～',
+        path:window.location.pathname,
+        avatar:'mm'
+      });
+    </script>
   </body>
 </html>

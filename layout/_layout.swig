@@ -34,6 +34,8 @@
 
     {% include '_script/libs.swig' %}
     {% include '_script/theme.swig' %}
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
     <script>
       new Valine({
         el: '#comment' ,
@@ -41,9 +43,10 @@
         verify:false,
         app_id: 'SrabF1tXJrV4acE8KepjoHP4-gzGzoHsz',
         app_key: 'Q2xiILiLtYtKpRTaz9M9RlDo',
-        placeholder: 'hi～',
+        placeholder: '啥？风太大，我听不清～～',
         path:window.location.pathname,
-        avatar:'mm'
+        avatar:'mm',
+        guest_info: ['nick', 'mail']
       });
     </script>
   </body>
